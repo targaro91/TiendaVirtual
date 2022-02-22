@@ -1,0 +1,105 @@
+body {
+ background-color: #f8f4f3;
+}
+
+.badge {
+  color: #FFFFFF;
+  background-color: #e8340b;
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 60%;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.btn-addcart {
+  color: #fff;
+  background-color: #7d08a3;
+}
+.btn-addcart:hover {
+  color: #fff;
+  background-color: #6d0391;
+}
+
+.btn-pay {
+  color: #fff;
+  background-color: #00a135;
+}
+.btn-pay:hover {
+  color: #fff;
+  background-color: #008f39;
+}
+
+
+
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+.bd-navbar {
+  padding: 0.75rem 0;
+  background-color: #7d08a3;
+}
+
+
+.btn-bd-download {
+  font-weight: 600;
+  color: #ffe484;
+  border-color: #ffe484;
+}
+
+img.banner  {
+  max-width: 100%;
+  height: auto;
+}
+a.tituloProductoExhibidor {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: justify;
+  
+}
+
+img.portafolio {
+  object-fit: contain;
+  width: 100%;
+  min-height: 185px;
+  height: 185px;
+  display: block;
+}
+
+.productoExhibido {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+}
+.caption {
+  font-weight: 600;
+  margin: 0.25rem;
+  text-align: justify;
+}
+.descripcionProductoExhibido {
+  margin: 0 0 3px;
+  height: 60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-top: 2px;
+  
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+}

@@ -1,0 +1,158 @@
+h1.title {
+	font-family: sans-serif;
+	font-weight: 900;
+}
+.calendar {
+	margin: 0px 40px;
+	font-family: sans-serif;
+}
+.popover.calendar-event-popover {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: rgb(120, 120, 120);
+	border-radius: 2px;
+	max-width: 300px;
+}
+.popover.calendar-event-popover h4 {
+	font-size: 14px;
+	font-weight: 900;
+}
+.popover.calendar-event-popover .location,
+.popover.calendar-event-popover .datetime {
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.popover.calendar-event-popover .location > span,
+.popover.calendar-event-popover .datetime > span {
+	margin-right: 10px;
+}
+.popover.calendar-event-popover .space,
+.popover.calendar-event-popover .attending {
+	margin-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgb(160, 160, 160);
+	font-weight: 700;
+}
+.popover.calendar-event-popover .space > .pull-right,
+.popover.calendar-event-popover .attending > .pull-right {
+	font-weight: 400;
+}
+.popover.calendar-event-popover .attending {
+	margin-top: 5px;
+	font-size: 18px;
+	padding: 0px 10px 5px;
+}
+.popover.calendar-event-popover .attending img {
+	border-radius: 50%;
+	width: 40px;
+}
+.popover.calendar-event-popover .attending span.attending-overflow {
+	display: inline-block;
+	width: 40px;
+	background-color: rgb(200, 200, 200);
+	border-radius: 50%;
+	padding: 8px 0px 7px;
+	text-align: center;
+}
+.popover.calendar-event-popover .attending > .pull-right {
+	font-size: 28px;
+}
+.popover.calendar-event-popover a.btn {
+	margin-top: 10px;
+	width: 100%;
+	border-radius: 3px;
+}
+[data-toggle="calendar"] > .row > .calendar-day {
+	font-family: 'Roboto', sans-serif;
+	width: 14.28571428571429%;
+	border: 1px solid rgb(235, 235, 235);
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	min-height: 120px;
+}
+[data-toggle="calendar"] > .row > .calendar-day .header-calendar-day {
+	min-height: 140px;
+}
+[data-toggle="calendar"] > .row > .calendar-day.calendar-no-current-month {
+	color: rgb(200, 200, 200);
+}
+[data-toggle="calendar"] > .row > .calendar-day:last-child {
+	border-right-width: 1px;
+}
+
+[data-toggle="calendar"] > .row:last-child > .calendar-day {
+	border-bottom-width: 1px;
+}
+
+.calendar-day > .numday {
+	display: block;
+	bottom: 0px;
+	left: 0px;
+	font-size: 12px;
+	font-weight: 300;
+	width: 100%;
+	padding: 2px 0px 2px 0px;
+	text-align: center;
+	color: #202124;
+}
+
+.calendar-day > .dayweek {
+	display: block;
+	bottom: 0px;
+	left: 0px;
+	font-size: 12px;
+	font-weight: 300;
+	width: 100%;
+	text-align: center;
+	color: #70757a
+}
+.calendar-day > .events {
+	cursor: pointer;
+}
+.calendar-day > .events > .event h4 {
+	font-size: 12px;
+	font-weight: 700;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 3px;
+}
+.calendar-day > .events > .event > .desc,
+.calendar-day > .events > .event > .location,
+.calendar-day > .events > .event > .datetime,
+.calendar-day > .events > .event > .attending {
+	display: none;
+}
+.calendar-day > .events > .event > .progress {
+	height: 10px;
+}
+div.event {
+	background-color: #1f8a2c;
+	color: white;
+	padding: 3px 2px 1px 3px;
+	border-radius: 3px 3px 3px 3px;
+	margin-left: 2px;
+	margin-right: 6px;
+	margin-bottom: 3px;
+}
+div.tarea-asignada {
+	background-color: #2b29bb;
+}
+div.tarea-normal {
+	background-color: #1f8a2c;
+}
+.detalles-tarea {
+	max-width: 250px;
+	width: 250px;
+}
+h4.eventtitle {
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	margin-bottom: 3px;
+	cursor: pointer;
+	font-family: sans-serif;
+}

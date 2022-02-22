@@ -1,0 +1,28 @@
+.dropdown-menu {
+	min-width: 250px;
+}
+
+.dropdown-notification {
+	height: 200px;
+	min-height: 200px;
+	min-width: 250px;
+	width: 250px;
+	overflow-y: scroll;
+}
+
+
+.dropdown-menu::-webkit-scrollbar {
+	width: 8px;
+    background-color: #F5F5F5;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+}
+
+
+a.link-inactive {
+	color: #007bff;
+}
+
+
