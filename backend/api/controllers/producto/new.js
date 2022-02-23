@@ -50,9 +50,8 @@ module.exports = {
 
 
   fn: async function ({ codigo, nombre, precio, mediaFiles, detalles, descripcion }) {
-    let a = sails.config.uploads;
+    
     // All done.
-    var url = require('url');
     var util = require('util');
 
     // Upload the image.
@@ -60,9 +59,10 @@ module.exports = {
     if (mediaFiles && mediaFiles._files[0] ) {
       let stream = mediaFiles._files[0].stream;
       let extname = stream.filename.split('.')[1];
-      filename = codigo + '.' + extname
+      filename = codigo + '.' + extname;
+      const basedir=sails.config.appPath+'\\.tmp\\public\\productpicture';
       var infoArr = await sails.uploadOne(stream, {
-        saveAs: filename,
+        saveAs: basedir+'\\'+filename,
       })
         .intercept((err) => new Error('The photo upload failed: ' + util.inspect(err)));
 
