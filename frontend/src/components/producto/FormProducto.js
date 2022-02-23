@@ -49,7 +49,7 @@ export default function FormProducto(props) {
         );
 
 
-        Api.apiPostProductoNew(formData).then(result => {
+        Api.postProductoNew(formData).then(result => {
             console.log(result);
 
         }

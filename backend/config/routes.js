@@ -13,6 +13,7 @@ module.exports.routes = {
 
   //PRUEBA
   'POST   /api/v1/producto/new':            { action: 'producto/new' },
+  'GET   /api/v1/producto':            { action: 'producto/index' },
 
   //  ╦ ╦╔═╗╔╗ ╔═╗╔═╗╔═╗╔═╗╔═╗
   //  ║║║║╣ ╠╩╗╠═╝╠═╣║ ╦║╣ ╚═╗

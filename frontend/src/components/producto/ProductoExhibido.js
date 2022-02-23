@@ -1,13 +1,14 @@
 import React from 'react';
+import { SERVER_PICTURE } from '../../helpers/static';
 
 export default function ProductoExhibido(props) {
 
     return <div className='container productoExhibido'>
         <div >
-            <img className='portafolio' src={props.data.srcimg} />
+            <img className='portafolio' src={SERVER_PICTURE+"/"+props.data.pathpicture} />
         </div>
         <div className='caption'>
-            <a className='tituloProductoExhibidor' href="" >{props.data.codigo}</a>
+            <a className='tituloProductoExhibidor' href="" >{props.data.nombre}</a>
             <div className='descripcionProductoExhibido'>
                 <p >{props.data.descripcion}</p>
             </div>

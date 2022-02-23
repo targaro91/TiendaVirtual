@@ -1,4 +1,6 @@
-export const SERVER_API = 'http://localhost:1337/api/v1'
+export const SERVER = 'http://localhost:1337'
+export const SERVER_API = SERVER+'/api/v1'
+export const SERVER_PICTURE = SERVER+'/productpicture'
 //export const SERVER_API = 'https://'+window.location.hostname+'/api/v1'
 export const HTTP_RESPONSE_ERROR = 450
 //agregado por david

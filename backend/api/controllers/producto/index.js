@@ -9,6 +9,19 @@ module.exports = {
 
   inputs: {
 
+    query: {
+      type: 'string',
+      description: ''
+    },
+    skip: {
+      type: 'number',
+      description: ''
+    },
+    limit: {
+      type: 'number',
+      description: ''
+    },
+
   },
 
 
@@ -17,10 +30,12 @@ module.exports = {
   },
 
 
-  fn: async function (inputs) {
+  fn: async function ({query='', skip, limit}) {
 
     // All done.
-    return;
+    let productos = await Producto.find().where({ 'nombre' : { contains : query } }).skip(skip).limit(limit);
+
+    return productos;
 
   }
 

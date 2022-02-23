@@ -60,7 +60,7 @@ module.exports = {
       let stream = mediaFiles._files[0].stream;
       let extname = stream.filename.split('.')[1];
       filename = codigo + '.' + extname;
-      const basedir=sails.config.appPath+'\\.tmp\\public\\productpicture';
+      const basedir=sails.config.appPath+'\\assets\\productpicture';
       var infoArr = await sails.uploadOne(stream, {
         saveAs: basedir+'\\'+filename,
       })
