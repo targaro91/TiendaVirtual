@@ -32,6 +32,7 @@ module.exports = {
 
   fn: async function ({query='', skip, limit}) {
 
+    return ["asdasd", "asdfasdf", "asdfadsfa"];
     // All done.
     let productos = await Producto.find().where({ 'nombre' : { contains : query } }).skip(skip).limit(limit);
 
